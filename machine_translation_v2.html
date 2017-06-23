@@ -11726,9 +11726,7 @@ body {
 div#notebook {
   overflow: visible;
   border-top: none;
-}
-
-@media print {
+}@media print {
   div.cell {
     display: block;
     page-break-inside: avoid;
@@ -11749,7 +11747,7 @@ div#notebook {
 
 <!-- Loading mathjax macro -->
 <!-- Load mathjax -->
-    <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_HTML"></script>
     <!-- MathJax configuration -->
     <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
@@ -11773,8 +11771,7 @@ div#notebook {
   <div tabindex="-1" id="notebook" class="border-box-sizing">
     <div class="container" id="notebook-container">
 
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -11810,8 +11807,7 @@ div#notebook {
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -11843,8 +11839,7 @@ div#notebook {
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -11872,7 +11867,9 @@ div#notebook {
 
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>small_vocab_en Line 1:  new jersey is sometimes quiet during autumn   and it is snowy in april  
@@ -11887,8 +11884,7 @@ small_vocab_fr Line 2:  les états-unis est généralement froid en juillet   et
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -11926,7 +11922,9 @@ small_vocab_fr Line 2:  les états-unis est généralement froid en juillet   et
 
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>1553314 English words.
@@ -11946,8 +11944,7 @@ small_vocab_fr Line 2:  les états-unis est généralement froid en juillet   et
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12010,7 +12007,9 @@ small_vocab_fr Line 2:  les états-unis est généralement froid en juillet   et
 
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 <div class="output_subarea output_stream output_stderr output_text">
 <pre>Using TensorFlow backend.
@@ -12019,20 +12018,22 @@ small_vocab_fr Line 2:  les états-unis est généralement froid en juillet   et
 </div>
 
 <div class="output_area">
+
 <div class="prompt"></div>
 
+
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>{&#39;won&#39;: 4, &#39;the&#39;: 1, &#39;over&#39;: 5, &#39;is&#39;: 6, &#39;dog&#39;: 7, &#39;jumps&#39;: 8, &#39;quick&#39;: 2, &#39;brown&#39;: 9, &#39;lazy&#39;: 10, &#39;sentence&#39;: 11, &#39;a&#39;: 3, &#39;my&#39;: 12, &#39;study&#39;: 13, &#39;short&#39;: 14, &#39;lexicography&#39;: 15, &#39;of&#39;: 16, &#39;by&#39;: 20, &#39;this&#39;: 17, &#39;jove&#39;: 19, &#39;prize&#39;: 18, &#39;fox&#39;: 21}
+<pre>{&#39;over&#39;: 21, &#39;quick&#39;: 1, &#39;jumps&#39;: 4, &#39;lexicography&#39;: 5, &#39;is&#39;: 6, &#39;study&#39;: 7, &#39;by&#39;: 8, &#39;dog&#39;: 9, &#39;my&#39;: 10, &#39;lazy&#39;: 11, &#39;prize&#39;: 12, &#39;the&#39;: 3, &#39;of&#39;: 13, &#39;brown&#39;: 14, &#39;jove&#39;: 15, &#39;fox&#39;: 16, &#39;this&#39;: 17, &#39;sentence&#39;: 18, &#39;short&#39;: 19, &#39;won&#39;: 20, &#39;a&#39;: 2}
 
 Sample 1
   The quick brown fox jumps over the lazy dog .
-  [1, 2, 9, 21, 8, 5, 1, 10, 7]
+  [3, 1, 14, 16, 4, 21, 3, 11, 9]
 Sample 2
   By Jove , my quick study of lexicography won a prize .
-  [20, 19, 12, 2, 13, 16, 15, 4, 3, 18]
+  [8, 15, 10, 1, 7, 13, 5, 20, 2, 12]
 Sample 3
   This is a short sentence .
-  [17, 6, 3, 14, 11]
+  [17, 6, 2, 19, 18]
 </pre>
 </div>
 </div>
@@ -12041,8 +12042,7 @@ Sample 3
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12086,18 +12086,20 @@ Sample 3
 
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Sample 1
-   9 Length - [ 1  2  9 21  8  5  1 10  7]
-  10 Length - [ 0  1  2  9 21  8  5  1 10  7]
+   9 Length - [ 3  1 14 16  4 21  3 11  9]
+  10 Length - [ 0  3  1 14 16  4 21  3 11  9]
 Sample 2
-  10 Length - [20 19 12  2 13 16 15  4  3 18]
-  10 Length - [20 19 12  2 13 16 15  4  3 18]
+  10 Length - [ 8 15 10  1  7 13  5 20  2 12]
+  10 Length - [ 8 15 10  1  7 13  5 20  2 12]
 Sample 3
-   5 Length - [17  6  3 14 11]
-  10 Length - [ 0  0  0  0  0 17  6  3 14 11]
+   5 Length - [17  6  2 19 18]
+  10 Length - [ 0  0  0  0  0 17  6  2 19 18]
 </pre>
 </div>
 </div>
@@ -12106,8 +12108,7 @@ Sample 3
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12149,55 +12150,57 @@ Sample 3
 
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Sample 1
-[ 0  1  2  9 21  8  5  1 10  7]
+[ 0  3  1 14 16  4 21  3 11  9]
 [[ 1.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.
-   0.  0.  0.  0.]
- [ 0.  1.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.
-   0.  0.  0.  0.]
- [ 0.  0.  1.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.
-   0.  0.  0.  0.]
- [ 0.  0.  0.  0.  0.  0.  0.  0.  0.  1.  0.  0.  0.  0.  0.  0.  0.  0.
-   0.  0.  0.  0.]
- [ 0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.
-   0.  0.  0.  1.]
- [ 0.  0.  0.  0.  0.  0.  0.  0.  1.  0.  0.  0.  0.  0.  0.  0.  0.  0.
-   0.  0.  0.  0.]
- [ 0.  0.  0.  0.  0.  1.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.
-   0.  0.  0.  0.]
- [ 0.  1.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.
-   0.  0.  0.  0.]
- [ 0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  1.  0.  0.  0.  0.  0.  0.  0.
-   0.  0.  0.  0.]
- [ 0.  0.  0.  0.  0.  0.  0.  1.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.
-   0.  0.  0.  0.]]
-Sample 2
-[20 19 12  2 13 16 15  4  3 18]
-[[ 0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.
-   0.  0.  1.  0.]
- [ 0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.
-   0.  1.  0.  0.]
- [ 0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  1.  0.  0.  0.  0.  0.
-   0.  0.  0.  0.]
- [ 0.  0.  1.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.
-   0.  0.  0.  0.]
- [ 0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  1.  0.  0.  0.  0.
-   0.  0.  0.  0.]
- [ 0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  1.  0.
-   0.  0.  0.  0.]
- [ 0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  1.  0.  0.
-   0.  0.  0.  0.]
- [ 0.  0.  0.  0.  1.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.
    0.  0.  0.  0.]
  [ 0.  0.  0.  1.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.
    0.  0.  0.  0.]
+ [ 0.  1.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.
+   0.  0.  0.  0.]
+ [ 0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  1.  0.  0.  0.
+   0.  0.  0.  0.]
+ [ 0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  1.  0.
+   0.  0.  0.  0.]
+ [ 0.  0.  0.  0.  1.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.
+   0.  0.  0.  0.]
  [ 0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.
-   1.  0.  0.  0.]]
+   0.  0.  0.  1.]
+ [ 0.  0.  0.  1.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.
+   0.  0.  0.  0.]
+ [ 0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  1.  0.  0.  0.  0.  0.  0.
+   0.  0.  0.  0.]
+ [ 0.  0.  0.  0.  0.  0.  0.  0.  0.  1.  0.  0.  0.  0.  0.  0.  0.  0.
+   0.  0.  0.  0.]]
+Sample 2
+[ 8 15 10  1  7 13  5 20  2 12]
+[[ 0.  0.  0.  0.  0.  0.  0.  0.  1.  0.  0.  0.  0.  0.  0.  0.  0.  0.
+   0.  0.  0.  0.]
+ [ 0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  1.  0.  0.
+   0.  0.  0.  0.]
+ [ 0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  1.  0.  0.  0.  0.  0.  0.  0.
+   0.  0.  0.  0.]
+ [ 0.  1.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.
+   0.  0.  0.  0.]
+ [ 0.  0.  0.  0.  0.  0.  0.  1.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.
+   0.  0.  0.  0.]
+ [ 0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  1.  0.  0.  0.  0.
+   0.  0.  0.  0.]
+ [ 0.  0.  0.  0.  0.  1.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.
+   0.  0.  0.  0.]
+ [ 0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.
+   0.  0.  1.  0.]
+ [ 0.  0.  1.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.
+   0.  0.  0.  0.]
+ [ 0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  1.  0.  0.  0.  0.  0.
+   0.  0.  0.  0.]]
 Sample 3
-[ 0  0  0  0  0 17  6  3 14 11]
+[ 0  0  0  0  0 17  6  2 19 18]
 [[ 1.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.
    0.  0.  0.  0.]
  [ 1.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.
@@ -12212,12 +12215,12 @@ Sample 3
    0.  0.  0.  0.]
  [ 0.  0.  0.  0.  0.  0.  1.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.
    0.  0.  0.  0.]
- [ 0.  0.  0.  1.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.
+ [ 0.  0.  1.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.
    0.  0.  0.  0.]
- [ 0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  1.  0.  0.  0.
-   0.  0.  0.  0.]
- [ 0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  1.  0.  0.  0.  0.  0.  0.
-   0.  0.  0.  0.]]
+ [ 0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.
+   0.  1.  0.  0.]
+ [ 0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.
+   1.  0.  0.  0.]]
 </pre>
 </div>
 </div>
@@ -12226,8 +12229,7 @@ Sample 3
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12238,7 +12240,7 @@ Sample 3
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[13]:</div>
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">preprocess</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">):</span>
@@ -12282,19 +12284,23 @@ Sample 3
 
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>(137861, 15)
 (137861, 21, 345)
-{&#39;paris&#39;: 18, &#39;march&#39;: 38, &#39;jersey&#39;: 23, &#39;it&#39;: 3, &#39;may&#39;: 40, &#39;fun&#39;: 145, &#39;winter&#39;: 37, &#39;my&#39;: 30, &#39;she&#39;: 26, &#39;our&#39;: 49, &#39;car&#39;: 100, &#39;snakes&#39;: 169, &#39;quiet&#39;: 67, &#39;strawberry&#39;: 82, &#39;driving&#39;: 107, &#39;mild&#39;: 64, &#39;easy&#39;: 147, &#39;pears&#39;: 72, &#39;have&#39;: 198, &#39;mice&#39;: 170, &#39;pleasant&#39;: 52, &#39;did&#39;: 152, &#39;orange&#39;: 83, &#39;birds&#39;: 172, &#39;dislikes&#39;: 69, &#39;to&#39;: 81, &#39;would&#39;: 190, &#39;think&#39;: 149, &#39;mango&#39;: 88, &#39;field&#39;: 182, &#39;wet&#39;: 65, &#39;disliked&#39;: 127, &#39;monkeys&#39;: 173, &#39;rainy&#39;: 63, &#39;horses&#39;: 174, &#39;going&#39;: 126, &#39;go&#39;: 106, &#39;elephants&#39;: 171, &#39;might&#39;: 135, &#39;fruit&#39;: 13, &#39;dog&#39;: 153, &#39;his&#39;: 31, &#39;your&#39;: 29, &#39;tower&#39;: 183, &#39;store&#39;: 184, &#39;april&#39;: 44, &#39;limes&#39;: 73, &#39;lime&#39;: 84, &#39;truck&#39;: 101, &#39;january&#39;: 36, &#39;china&#39;: 25, &#39;lion&#39;: 154, &#39;france&#39;: 24, &#39;fall&#39;: 33, &#39;peaches&#39;: 74, &#34;didn&#39;t&#34;: 181, &#39;autumn&#39;: 39, &#39;translating&#39;: 144, &#39;liked&#39;: 16, &#39;her&#39;: 32, &#39;eiffel&#39;: 185, &#39;apple&#39;: 85, &#39;united&#39;: 21, &#39;spring&#39;: 35, &#39;november&#39;: 45, &#39;rusty&#39;: 111, &#39;bird&#39;: 155, &#39;states&#39;: 20, &#39;dry&#39;: 59, &#39;lemon&#39;: 86, &#39;grapes&#39;: 76, &#39;california&#39;: 22, &#39;i&#39;: 96, &#39;usually&#39;: 9, &#39;blue&#39;: 112, &#39;plans&#39;: 133, &#39;favorite&#39;: 11, &#39;drove&#39;: 128, &#39;the&#39;: 5, &#39;want&#39;: 166, &#39;you&#39;: 98, &#39;difficult&#39;: 146, &#39;june&#39;: 34, &#39;drives&#39;: 129, &#39;august&#39;: 61, &#39;wonderful&#39;: 58, &#39;new&#39;: 17, &#39;relaxing&#39;: 66, &#39;thinks&#39;: 138, &#39;do&#39;: 167, &#39;bear&#39;: 156, &#39;beautiful&#39;: 53, &#39;cats&#39;: 175, &#39;yellow&#39;: 113, &#39;sharks&#39;: 176, &#39;is&#39;: 1, &#39;lemons&#39;: 77, &#39;grape&#39;: 87, &#39;february&#39;: 48, &#39;busy&#39;: 60, &#39;loved&#39;: 15, &#39;we&#39;: 97, &#39;october&#39;: 54, &#39;apples&#39;: 71, &#39;he&#39;: 27, &#39;plan&#39;: 125, &#39;weather&#39;: 193, &#39;horse&#39;: 158, &#39;old&#39;: 114, &#39;warm&#39;: 56, &#39;translate&#39;: 132, &#39;likes&#39;: 70, &#39;in&#39;: 2, &#39;black&#39;: 115, &#39;french&#39;: 139, &#39;least&#39;: 12, &#39;automobile&#39;: 102, &#39;english&#39;: 140, &#39;but&#39;: 6, &#39;snake&#39;: 159, &#39;september&#39;: 42, &#39;pear&#39;: 89, &#39;sometimes&#39;: 8, &#39;mangoes&#39;: 78, &#39;school&#39;: 186, &#39;dislike&#39;: 93, &#34;aren&#39;t&#34;: 191, &#39;hot&#39;: 68, &#39;am&#39;: 195, &#39;last&#39;: 121, &#39;that&#39;: 95, &#39;cold&#39;: 57, &#39;banana&#39;: 90, &#39;been&#39;: 192, &#34;it&#39;s&#34;: 150, &#39;wanted&#39;: 136, &#39;rabbits&#39;: 177, &#39;white&#39;: 116, &#39;was&#39;: 104, &#39;cat&#39;: 160, &#34;isn&#39;t&#34;: 196, &#39;little&#39;: 109, &#39;chilly&#39;: 62, &#39;nice&#39;: 41, &#39;freezing&#39;: 51, &#39;chinese&#39;: 141, &#39;rabbit&#39;: 161, &#39;red&#39;: 117, &#39;never&#39;: 10, &#39;animals&#39;: 122, &#39;their&#39;: 50, &#39;india&#39;: 19, &#39;green&#39;: 118, &#39;saw&#39;: 130, &#39;bananas&#39;: 79, &#39;visit&#39;: 108, &#39;strawberries&#39;: 75, &#39;wants&#39;: 148, &#39;football&#39;: 187, &#39;went&#39;: 137, &#39;july&#39;: 43, &#39;most&#39;: 14, &#39;they&#39;: 94, &#39;peach&#39;: 91, &#39;were&#39;: 134, &#39;during&#39;: 4, &#39;shiny&#39;: 119, &#39;monkey&#39;: 162, &#39;animal&#39;: 99, &#39;a&#39;: 103, &#39;between&#39;: 131, &#39;next&#39;: 105, &#39;how&#39;: 168, &#39;grocery&#39;: 188, &#39;when&#39;: 165, &#39;where&#39;: 199, &#39;lions&#39;: 178, &#39;dogs&#39;: 179, &#39;feared&#39;: 123, &#39;and&#39;: 7, &#39;like&#39;: 92, &#39;lake&#39;: 189, &#39;big&#39;: 110, &#39;elephant&#39;: 157, &#39;grapefruit&#39;: 28, &#39;this&#39;: 124, &#39;december&#39;: 47, &#39;does&#39;: 194, &#39;spanish&#39;: 142, &#39;snowy&#39;: 55, &#39;bears&#39;: 180, &#39;summer&#39;: 46, &#39;shark&#39;: 164, &#39;mouse&#39;: 163, &#39;oranges&#39;: 80, &#39;has&#39;: 197, &#39;portuguese&#39;: 143, &#39;are&#39;: 120, &#39;why&#39;: 151}
-{&#39;sont&#39;: 131, &#39;chinois&#39;: 185, &#39;jersey&#39;: 34, &#39;dernière&#39;: 292, &#39;et&#39;: 6, &#39;nouveau&#39;: 163, &#39;chiens&#39;: 256, &#39;doux&#39;: 58, &#39;vont&#39;: 229, &#39;juin&#39;: 41, &#39;bien&#39;: 249, &#39;prévoient&#39;: 251, &#39;banane&#39;: 83, &#39;moindres&#39;: 322, &#39;petit&#39;: 184, &#39;vu&#39;: 149, &#34;n&#39;êtes&#34;: 327, &#39;déteste&#39;: 94, &#39;chine&#39;: 36, &#39;frisquet&#39;: 139, &#39;traduire&#39;: 164, &#39;blanche&#39;: 155, &#39;septembre&#39;: 48, &#39;habituellement&#39;: 69, &#39;voulaient&#39;: 238, &#39;lapins&#39;: 257, &#39;notre&#39;: 61, &#39;conduit&#39;: 113, &#39;lions&#39;: 259, &#39;cépage&#39;: 270, &#39;prochain&#39;: 114, &#39;tu&#39;: 330, &#39;va&#39;: 180, &#39;californie&#39;: 62, &#39;fruit&#39;: 16, &#39;envisage&#39;: 178, &#39;rouillé&#39;: 169, &#39;souris&#39;: 201, &#39;été&#39;: 46, &#39;hiver&#39;: 44, &#39;ses&#39;: 170, &#39;détendre&#39;: 241, &#39;occupée&#39;: 138, &#34;l&#39;automobile&#34;: 244, &#39;poire&#39;: 84, &#39;lion&#39;: 214, &#39;france&#39;: 33, &#39;plus&#39;: 23, &#39;aime&#39;: 55, &#39;intention&#39;: 210, &#39;visite&#39;: 254, &#39;est&#39;: 1, &#39;temps&#39;: 286, &#39;aimait&#39;: 143, &#39;prévois&#39;: 207, &#34;n&#39;aimons&#34;: 245, &#34;l&#39;épicerie&#34;: 272, &#39;bananes&#39;: 70, &#39;pommes&#39;: 71, &#39;mars&#39;: 45, &#39;serpent&#39;: 216, &#39;pousse&#39;: 283, &#39;cher&#39;: 119, &#39;mangue&#39;: 80, &#39;les&#39;: 4, &#39;aimé&#39;: 14, &#39;oiseau&#39;: 236, &#39;nous&#39;: 107, &#39;détestait&#39;: 247, &#39;mouillé&#39;: 195, &#39;vous&#39;: 106, &#39;noire&#39;: 153, &#39;pendant&#39;: 37, &#39;janvier&#39;: 43, &#39;frais&#39;: 296, &#39;préférées&#39;: 304, &#39;cet&#39;: 192, &#39;peu&#39;: 284, &#39;trop&#39;: 226, &#39;pense&#39;: 161, &#39;aux&#39;: 173, &#39;raisin&#39;: 82, &#39;à&#39;: 26, &#39;singe&#39;: 217, &#39;citron&#39;: 85, &#39;pluvieux&#39;: 66, &#39;douce&#39;: 306, &#39;parfois&#39;: 8, &#39;gel&#39;: 81, &#39;le&#39;: 10, &#39;ils&#39;: 99, &#39;elle&#39;: 27, &#39;belle&#39;: 104, &#39;allé&#39;: 223, &#39;pêches&#39;: 72, &#39;février&#39;: 53, &#39;une&#39;: 120, &#39;vieille&#39;: 148, &#39;ne&#39;: 105, &#39;pluie&#39;: 225, &#39;brillant&#39;: 154, &#39;aimez&#39;: 130, &#39;grosses&#39;: 319, &#39;entre&#39;: 160, &#39;raisins&#39;: 77, &#39;glaciales&#39;: 190, &#39;rouille&#39;: 287, &#39;redoutée&#39;: 331, &#39;dernier&#39;: 142, &#39;avril&#39;: 50, &#39;trouvé&#39;: 338, &#39;sec&#39;: 63, &#39;aiment&#39;: 124, &#39;faire&#39;: 339, &#39;cette&#39;: 121, &#39;plaît&#39;: 309, &#39;enneigée&#39;: 92, &#39;merveilleux&#39;: 57, &#39;t&#39;: 300, &#39;pêche&#39;: 86, &#39;singes&#39;: 258, &#39;lapin&#39;: 219, &#39;calme&#39;: 67, &#39;redoutés&#39;: 222, &#39;pluies&#39;: 177, &#39;espagnol&#39;: 186, &#39;visiter&#39;: 136, &#39;vert&#39;: 182, &#39;vais&#39;: 293, &#39;prévoyons&#39;: 208, &#39;enneigé&#39;: 321, &#39;comme&#39;: 199, &#39;éléphants&#39;: 263, &#39;volant&#39;: 230, &#39;chat&#39;: 215, &#34;c&#39;est&#34;: 301, &#39;voudrait&#39;: 294, &#39;facile&#39;: 196, &#39;fraise&#39;: 87, &#39;pas&#39;: 91, &#39;neige&#39;: 102, &#39;préférée&#39;: 140, &#39;chaud&#39;: 21, &#39;printemps&#39;: 42, &#39;congélation&#39;: 307, &#39;pourrait&#39;: 202, &#39;sur&#39;: 289, &#39;froid&#39;: 19, &#39;des&#39;: 108, &#39;au&#39;: 15, &#39;août&#39;: 56, &#39;détestons&#39;: 132, &#39;poires&#39;: 73, &#39;proches&#39;: 297, &#34;n&#39;aiment&#34;: 126, &#34;n&#39;a&#34;: 311, &#39;tranquille&#39;: 117, &#39;rouge&#39;: 133, &#39;aimons&#39;: 127, &#39;étaient&#39;: 179, &#39;états&#39;: 32, &#39;chien&#39;: 218, &#39;détestez&#39;: 302, &#39;petits&#39;: 315, &#39;es&#39;: 337, &#39;leur&#39;: 64, &#39;brillante&#39;: 174, &#39;oiseaux&#39;: 260, &#39;en&#39;: 2, &#39;traduis&#39;: 332, &#39;mais&#39;: 5, &#39;généralement&#39;: 12, &#39;agréable&#39;: 18, &#39;pomme&#39;: 88, &#39;français&#39;: 187, &#39;automne&#39;: 24, &#39;voulait&#39;: 203, &#39;pensez&#39;: 271, &#34;l&#39;oiseau&#34;: 261, &#39;chaude&#39;: 125, &#39;humide&#39;: 60, &#39;préféré&#39;: 17, &#39;favori&#39;: 93, &#39;manguiers&#39;: 298, &#39;apprécié&#39;: 333, &#39;paris&#39;: 29, &#39;un&#39;: 144, &#39;porcelaine&#39;: 303, &#39;légère&#39;: 269, &#39;mes&#39;: 191, &#39;chaux&#39;: 89, &#39;êtes&#39;: 295, &#39;occupé&#39;: 65, &#39;envisagent&#39;: 316, &#39;cheval&#39;: 220, &#39;aimeraient&#39;: 312, &#39;vos&#39;: 209, &#39;chevaux&#39;: 262, &#34;l&#39;orange&#34;: 90, &#39;sèche&#39;: 137, &#39;monde&#39;: 227, &#39;comment&#39;: 255, &#34;l&#39;animal&#34;: 279, &#39;terrain&#39;: 273, &#39;noir&#39;: 176, &#39;juillet&#39;: 49, &#39;était&#39;: 122, &#39;pamplemousse&#39;: 38, &#39;la&#39;: 7, &#34;qu&#39;il&#34;: 171, &#39;mois&#39;: 25, &#39;mangues&#39;: 78, &#39;favoris&#39;: 340, &#39;chats&#39;: 264, &#39;que&#39;: 146, &#39;rendre&#39;: 181, &#39;maillot&#39;: 228, &#39;préférés&#39;: 175, &#39;pourquoi&#39;: 205, &#39;veulent&#39;: 239, &#39;son&#39;: 20, &#39;citrons&#39;: 28, &#39;détend&#39;: 334, &#39;grande&#39;: 168, &#34;n&#39;aimez&#34;: 128, &#39;as&#39;: 341, &#39;allée&#39;: 232, &#39;mai&#39;: 47, &#39;aller&#39;: 123, &#39;relaxant&#39;: 59, &#39;ce&#39;: 115, &#39;allez&#39;: 281, &#34;l&#39;école&#34;: 274, &#39;ont&#39;: 212, &#39;conduite&#39;: 324, &#39;etats&#39;: 328, &#34;n&#39;est&#34;: 280, &#39;octobre&#39;: 54, &#39;jaune&#39;: 134, &#39;aimée&#39;: 242, &#39;magnifique&#39;: 243, &#39;anglais&#39;: 188, &#39;eiffel&#39;: 275, &#39;novembre&#39;: 51, &#39;grand&#39;: 248, &#39;je&#39;: 116, &#39;gelés&#39;: 325, &#39;neigeux&#39;: 112, &#39;california&#39;: 101, &#39;i&#39;: 233, &#39;difficile&#39;: 197, &#39;prévoit&#39;: 252, &#39;leurs&#39;: 129, &#39;inde&#39;: 30, &#39;grandes&#39;: 305, &#39;décembre&#39;: 52, &#39;lac&#39;: 276, &#39;limes&#39;: 317, &#39;new&#39;: 35, &#39;cours&#39;: 111, &#39;portugais&#39;: 189, &#39;grosse&#39;: 224, &#39;nos&#39;: 152, &#39;il&#39;: 3, &#39;pamplemousses&#39;: 159, &#39;gelé&#39;: 246, &#39;moins&#39;: 13, &#39;durant&#39;: 308, &#39;verts&#39;: 76, &#39;camion&#39;: 110, &#39;requins&#39;: 265, &#39;serpents&#39;: 266, &#39;quand&#39;: 235, &#39;blanc&#39;: 172, &#34;l&#39;éléphant&#34;: 267, &#39;beau&#39;: 68, &#34;j&#39;aime&#34;: 135, &#39;voulez&#39;: 313, &#39;animaux&#39;: 141, &#39;conduisait&#39;: 145, &#39;allions&#39;: 342, &#39;pleut&#39;: 157, &#39;votre&#39;: 40, &#39;se&#39;: 167, &#39;fruits&#39;: 96, &#34;n&#39;aime&#34;: 100, &#39;de&#39;: 22, &#39;dans&#39;: 310, &#39;automobile&#39;: 193, &#39;clémentes&#39;: 211, &#39;grands&#39;: 318, &#39;avez&#39;: 231, &#39;voiture&#39;: 97, &#39;gèle&#39;: 95, &#39;gros&#39;: 200, &#39;bénigne&#39;: 320, &#39;verte&#39;: 150, &#39;amusant&#39;: 198, &#39;fraises&#39;: 74, &#39;rouillée&#39;: 165, &#34;qu&#39;elle&#34;: 290, &#39;ressort&#39;: 335, &#39;requin&#39;: 213, &#39;souvent&#39;: 343, &#39;tour&#39;: 277, &#39;jamais&#39;: 9, &#39;unis&#39;: 31, &#39;vieux&#39;: 183, &#39;redouté&#39;: 156, &#39;moteur&#39;: 344, &#34;l&#39;automne&#34;: 98, &#39;petites&#39;: 291, &#39;aimés&#39;: 206, &#39;petite&#39;: 151, &#39;mon&#39;: 39, &#39;allés&#39;: 234, &#39;veut&#39;: 204, &#39;allons&#39;: 282, &#39;nouvelle&#39;: 147, &#34;l&#39;&#34;: 11, &#39;lui&#39;: 253, &#39;football&#39;: 278, &#39;tout&#39;: 326, &#39;du&#39;: 285, &#39;animal&#39;: 109, &#39;bleu&#39;: 166, &#39;a&#39;: 118, &#39;at&#39;: 288, &#39;vit&#39;: 329, &#34;n&#39;aimait&#34;: 158, &#34;d&#39;&#34;: 79, &#39;vers&#39;: 250, &#34;l&#39;ours&#34;: 268, &#39;fait&#39;: 103, &#39;bleue&#39;: 162, &#39;ours&#39;: 221, &#39;éléphant&#39;: 237, &#39;avons&#39;: 299, &#39;où&#39;: 314, &#39;qui&#39;: 336, &#39;pourraient&#39;: 240, &#39;mouillée&#39;: 323, &#39;oranges&#39;: 75, &#39;traduction&#39;: 194}
+{&#39;want&#39;: 166, &#39;march&#39;: 38, &#39;been&#39;: 191, &#39;france&#39;: 24, &#39;during&#39;: 4, &#39;lime&#39;: 82, &#39;he&#39;: 26, &#39;november&#39;: 45, &#39;a&#39;: 100, &#39;animal&#39;: 99, &#39;she&#39;: 27, &#39;jersey&#39;: 23, &#39;china&#39;: 25, &#39;june&#39;: 34, &#39;snowy&#39;: 55, &#39;mouse&#39;: 153, &#39;where&#39;: 198, &#39;truck&#39;: 101, &#39;our&#39;: 49, &#39;blue&#39;: 111, &#39;i&#39;: 96, &#39;they&#39;: 94, &#39;mangoes&#39;: 71, &#39;it&#39;: 3, &#39;freezing&#39;: 51, &#39;warm&#39;: 56, &#39;strawberries&#39;: 72, &#39;translating&#39;: 144, &#39;going&#39;: 126, &#34;didn&#39;t&#34;: 181, &#39;grapefruit&#39;: 28, &#39;my&#39;: 30, &#39;would&#39;: 190, &#39;horse&#39;: 154, &#39;how&#39;: 168, &#39;grocery&#39;: 182, &#39;india&#39;: 19, &#39;her&#39;: 31, &#39;have&#39;: 199, &#39;liked&#39;: 16, &#39;their&#39;: 50, &#39;apples&#39;: 73, &#39;driving&#39;: 107, &#39;december&#39;: 47, &#39;cats&#39;: 169, &#39;autumn&#39;: 39, &#39;peach&#39;: 83, &#39;lake&#39;: 183, &#39;weather&#39;: 193, &#39;easy&#39;: 145, &#39;dog&#39;: 155, &#39;grapes&#39;: 74, &#39;rainy&#39;: 63, &#39;yellow&#39;: 112, &#39;grape&#39;: 84, &#39;lemon&#39;: 85, &#39;drives&#39;: 127, &#39;elephants&#39;: 171, &#39;dry&#39;: 59, &#39;between&#39;: 131, &#39;states&#39;: 20, &#39;sometimes&#39;: 8, &#39;automobile&#39;: 102, &#39;old&#39;: 113, &#39;disliked&#39;: 128, &#39;is&#39;: 1, &#39;was&#39;: 104, &#39;red&#39;: 114, &#39;mango&#39;: 86, &#39;and&#39;: 7, &#39;wants&#39;: 148, &#39;school&#39;: 184, &#39;rabbits&#39;: 172, &#39;go&#39;: 106, &#39;california&#39;: 22, &#39;limes&#39;: 78, &#39;feared&#39;: 122, &#39;animals&#39;: 123, &#39;drove&#39;: 129, &#39;cat&#39;: 156, &#39;usually&#39;: 9, &#39;big&#39;: 109, &#39;february&#39;: 48, &#39;hot&#39;: 68, &#39;next&#39;: 105, &#39;apple&#39;: 87, &#39;busy&#39;: 60, &#39;lions&#39;: 173, &#39;little&#39;: 110, &#39;mild&#39;: 64, &#39;fall&#39;: 33, &#39;plans&#39;: 133, &#39;may&#39;: 40, &#39;august&#39;: 61, &#39;in&#39;: 2, &#39;wet&#39;: 65, &#39;green&#39;: 115, &#39;shark&#39;: 157, &#39;lemons&#39;: 75, &#39;least&#39;: 12, &#34;aren&#39;t&#34;: 192, &#39;like&#39;: 92, &#39;am&#39;: 194, &#39;most&#39;: 14, &#39;wanted&#39;: 135, &#39;but&#39;: 6, &#39;are&#39;: 120, &#39;january&#39;: 36, &#39;bears&#39;: 174, &#34;isn&#39;t&#34;: 195, &#39;monkey&#39;: 158, &#39;new&#39;: 17, &#39;september&#39;: 42, &#39;mice&#39;: 170, &#39;has&#39;: 196, &#39;snakes&#39;: 175, &#39;dislike&#39;: 93, &#39;wonderful&#39;: 58, &#34;it&#39;s&#34;: 149, &#39;tower&#39;: 185, &#39;orange&#39;: 88, &#39;rusty&#39;: 116, &#39;went&#39;: 136, &#39;eiffel&#39;: 186, &#39;july&#39;: 43, &#39;fruit&#39;: 13, &#39;portuguese&#39;: 140, &#39;did&#39;: 152, &#39;pear&#39;: 89, &#39;thinks&#39;: 138, &#39;relaxing&#39;: 66, &#39;chilly&#39;: 62, &#39;quiet&#39;: 67, &#39;bird&#39;: 159, &#39;last&#39;: 121, &#39;pleasant&#39;: 52, &#39;chinese&#39;: 141, &#39;nice&#39;: 41, &#39;never&#39;: 10, &#39;winter&#39;: 37, &#39;store&#39;: 187, &#39;dogs&#39;: 176, &#39;fun&#39;: 146, &#39;plan&#39;: 125, &#39;french&#39;: 142, &#39;beautiful&#39;: 53, &#39;loved&#39;: 15, &#39;april&#39;: 44, &#39;rabbit&#39;: 160, &#39;sharks&#39;: 177, &#39;we&#39;: 97, &#39;united&#39;: 21, &#39;you&#39;: 98, &#39;peaches&#39;: 76, &#39;dislikes&#39;: 69, &#39;bananas&#39;: 77, &#39;cold&#39;: 57, &#39;spring&#39;: 35, &#39;elephant&#39;: 162, &#39;difficult&#39;: 147, &#39;pears&#39;: 79, &#39;think&#39;: 150, &#39;to&#39;: 81, &#39;white&#39;: 117, &#39;visit&#39;: 108, &#39;car&#39;: 103, &#39;paris&#39;: 18, &#39;lion&#39;: 161, &#39;saw&#39;: 130, &#39;horses&#39;: 178, &#39;english&#39;: 139, &#39;translate&#39;: 132, &#39;his&#39;: 32, &#39;strawberry&#39;: 90, &#39;your&#39;: 29, &#39;black&#39;: 118, &#39;that&#39;: 95, &#39;the&#39;: 5, &#39;favorite&#39;: 11, &#39;do&#39;: 167, &#39;why&#39;: 151, &#39;summer&#39;: 46, &#39;banana&#39;: 91, &#39;might&#39;: 137, &#39;birds&#39;: 179, &#39;shiny&#39;: 119, &#39;oranges&#39;: 80, &#39;this&#39;: 124, &#39;october&#39;: 54, &#39;likes&#39;: 70, &#39;when&#39;: 165, &#39;bear&#39;: 163, &#39;field&#39;: 188, &#39;were&#39;: 134, &#39;spanish&#39;: 143, &#39;football&#39;: 189, &#39;snake&#39;: 164, &#39;monkeys&#39;: 180, &#39;does&#39;: 197}
+{&#39;mars&#39;: 45, &#39;france&#39;: 33, &#39;prochain&#39;: 114, &#39;lapin&#39;: 213, &#39;détestez&#39;: 301, &#39;et&#39;: 6, &#39;calme&#39;: 67, &#39;jersey&#39;: 34, &#39;jamais&#39;: 9, &#39;oiseaux&#39;: 256, &#34;n&#39;êtes&#34;: 327, &#39;redouté&#39;: 156, &#39;etats&#39;: 328, &#34;l&#39;éléphant&#34;: 257, &#39;cher&#39;: 119, &#39;faire&#39;: 337, &#39;éléphant&#39;: 236, &#39;bien&#39;: 249, &#39;avril&#39;: 50, &#34;l&#39;&#34;: 11, &#39;ses&#39;: 170, &#39;belle&#39;: 104, &#39;visite&#39;: 254, &#39;traduire&#39;: 164, &#39;oiseau&#39;: 237, &#39;prévoit&#39;: 251, &#39;pomme&#39;: 83, &#39;verts&#39;: 76, &#39;rouille&#39;: 287, &#39;allés&#39;: 232, &#39;fait&#39;: 103, &#39;veulent&#39;: 238, &#39;chien&#39;: 214, &#39;temps&#39;: 286, &#39;glaciales&#39;: 190, &#39;légère&#39;: 269, &#39;vous&#39;: 106, &#39;difficile&#39;: 196, &#39;neige&#39;: 102, &#39;noir&#39;: 176, &#39;nous&#39;: 107, &#39;enneigé&#39;: 321, &#39;citron&#39;: 84, &#39;habituellement&#39;: 69, &#39;merveilleux&#39;: 57, &#39;chats&#39;: 259, &#39;chaux&#39;: 85, &#34;l&#39;animal&#34;: 279, &#39;je&#39;: 116, &#39;cépage&#39;: 270, &#39;citrons&#39;: 28, &#39;peu&#39;: 283, &#39;il&#39;: 3, &#39;unis&#39;: 31, &#39;qui&#39;: 330, &#39;vos&#39;: 209, &#39;terrain&#39;: 272, &#39;détestons&#39;: 132, &#39;pourquoi&#39;: 205, &#39;doux&#39;: 58, &#39;comme&#39;: 199, &#39;california&#39;: 101, &#39;californie&#39;: 62, &#39;pas&#39;: 91, &#39;gros&#39;: 200, &#39;envisagent&#39;: 316, &#39;vert&#39;: 182, &#39;en&#39;: 2, &#39;occupée&#39;: 138, &#39;beau&#39;: 68, &#39;veut&#39;: 202, &#39;leur&#39;: 64, &#39;espagnol&#39;: 185, &#39;pêches&#39;: 70, &#39;requin&#39;: 215, &#39;grosse&#39;: 224, &#39;un&#39;: 144, &#39;pêche&#39;: 86, &#39;que&#39;: 146, &#39;vieille&#39;: 148, &#39;janvier&#39;: 43, &#39;cheval&#39;: 216, &#39;petites&#39;: 290, &#39;limes&#39;: 317, &#39;détendre&#39;: 241, &#39;va&#39;: 180, &#39;êtes&#39;: 292, &#39;requins&#39;: 261, &#39;grand&#39;: 248, &#39;détend&#39;: 331, &#39;brillant&#39;: 154, &#39;apprécié&#39;: 332, &#39;fruit&#39;: 16, &#34;c&#39;est&#34;: 302, &#39;états&#39;: 32, &#39;singe&#39;: 217, &#39;pourraient&#39;: 239, &#39;poire&#39;: 87, &#39;t&#39;: 300, &#39;blanc&#39;: 171, &#39;préférés&#39;: 175, &#39;moteur&#39;: 338, &#39;pousse&#39;: 284, &#34;n&#39;est&#34;: 280, &#39;juillet&#39;: 49, &#39;banane&#39;: 88, &#39;vais&#39;: 293, &#39;voulait&#39;: 203, &#39;vers&#39;: 250, &#39;été&#39;: 46, &#34;l&#39;oiseau&#34;: 262, &#39;volant&#39;: 230, &#34;n&#39;aimez&#34;: 128, &#39;as&#39;: 339, &#39;camion&#39;: 110, &#39;traduis&#39;: 333, &#39;est&#39;: 1, &#39;dernière&#39;: 294, &#39;chat&#39;: 218, &#39;cette&#39;: 121, &#39;es&#39;: 340, &#39;bleue&#39;: 162, &#34;l&#39;orange&#34;: 89, &#39;bénigne&#39;: 319, &#39;pense&#39;: 160, &#39;grands&#39;: 318, &#39;conduit&#39;: 113, &#39;conduite&#39;: 324, &#39;redoutés&#39;: 222, &#39;grandes&#39;: 304, &#39;froid&#39;: 19, &#39;cours&#39;: 111, &#39;son&#39;: 20, &#39;redoutée&#39;: 334, &#39;tour&#39;: 273, &#34;l&#39;épicerie&#34;: 274, &#39;visiter&#39;: 136, &#39;au&#39;: 15, &#39;mangue&#39;: 80, &#39;tout&#39;: 326, &#39;porcelaine&#39;: 303, &#39;raisin&#39;: 82, &#39;gelés&#39;: 325, &#39;lion&#39;: 219, &#34;l&#39;école&#34;: 275, &#39;comment&#39;: 255, &#39;vieux&#39;: 183, &#39;chinois&#39;: 186, &#39;tranquille&#39;: 117, &#39;trop&#39;: 226, &#39;bleu&#39;: 166, &#39;magnifique&#39;: 243, &#39;aimeraient&#39;: 310, &#39;notre&#39;: 61, &#39;lui&#39;: 253, &#39;sec&#39;: 63, &#39;pourrait&#39;: 204, &#39;souvent&#39;: 341, &#39;mois&#39;: 25, &#39;automne&#39;: 24, &#39;allons&#39;: 281, &#39;douce&#39;: 306, &#34;qu&#39;elle&#34;: 291, &#39;allez&#39;: 282, &#39;football&#39;: 276, &#39;pamplemousse&#39;: 38, &#34;n&#39;a&#34;: 311, &#39;lac&#39;: 277, &#39;souris&#39;: 201, &#39;voulez&#39;: 312, &#39;singes&#39;: 263, &#39;septembre&#39;: 48, &#39;ressort&#39;: 335, &#39;intention&#39;: 210, &#39;août&#39;: 56, &#39;dernier&#39;: 142, &#39;a&#39;: 118, &#39;animal&#39;: 109, &#34;l&#39;automobile&#34;: 244, &#39;quand&#39;: 235, &#39;raisins&#39;: 77, &#39;préférée&#39;: 140, &#39;allée&#39;: 233, &#39;amusant&#39;: 197, &#39;i&#39;: 234, &#39;chevaux&#39;: 264, &#34;n&#39;aiment&#34;: 127, &#39;aimés&#39;: 206, &#39;petite&#39;: 151, &#39;leurs&#39;: 129, &#39;français&#39;: 187, &#34;n&#39;aime&#34;: 100, &#39;chine&#39;: 36, &#39;enneigée&#39;: 92, &#39;noire&#39;: 153, &#39;clémentes&#39;: 211, &#39;détestait&#39;: 247, &#39;blanche&#39;: 155, &#39;allions&#39;: 342, &#39;préférées&#39;: 305, &#39;petit&#39;: 184, &#39;votre&#39;: 40, &#39;voudrait&#39;: 295, &#39;tu&#39;: 336, &#39;mon&#39;: 39, &#39;pluvieux&#39;: 66, &#39;vit&#39;: 329, &#39;rouillé&#39;: 169, &#39;bananes&#39;: 72, &#39;plaît&#39;: 309, &#39;aimons&#39;: 126, &#39;pluie&#39;: 225, &#39;mai&#39;: 47, &#39;mangues&#39;: 78, &#39;juin&#39;: 41, &#39;parfois&#39;: 8, &#39;monde&#39;: 227, &#39;mouillé&#39;: 195, &#39;avons&#39;: 298, &#39;février&#39;: 53, &#39;grande&#39;: 168, &#39;chaud&#39;: 21, &#39;prévoient&#39;: 252, &#34;l&#39;automne&#34;: 98, &#39;chaude&#39;: 125, &#39;aux&#39;: 173, &#39;animaux&#39;: 141, &#39;favoris&#39;: 343, &#39;pensez&#39;: 271, &#39;aime&#39;: 55, &#39;une&#39;: 120, &#39;petits&#39;: 315, &#39;automobile&#39;: 193, &#39;aiment&#39;: 124, &#39;jaune&#39;: 133, &#39;voiture&#39;: 97, &#39;entre&#39;: 161, &#39;humide&#39;: 60, &#34;n&#39;aimons&#34;: 245, &#39;déteste&#39;: 94, &#39;printemps&#39;: 42, &#39;occupé&#39;: 65, &#39;les&#39;: 4, &#39;frisquet&#39;: 139, &#39;rouillée&#39;: 165, &#39;novembre&#39;: 51, &#39;aimez&#39;: 130, &#39;sèche&#39;: 137, &#39;portugais&#39;: 188, &#39;lions&#39;: 265, &#39;ours&#39;: 220, &#39;manguiers&#39;: 299, &#39;vu&#39;: 149, &#39;proches&#39;: 296, &#39;traduction&#39;: 194, &#39;chiens&#39;: 260, &#39;rouge&#39;: 134, &#39;agréable&#39;: 18, &#39;sont&#39;: 131, &#39;fraise&#39;: 90, &#39;des&#39;: 108, &#39;où&#39;: 313, &#39;voulaient&#39;: 240, &#39;de&#39;: 22, &#39;trouvé&#39;: 344, &#39;étaient&#39;: 179, &#34;n&#39;aimait&#34;: 158, &#39;aimait&#39;: 143, &#39;aimé&#39;: 14, &#39;cet&#39;: 192, &#39;eiffel&#39;: 278, &#39;prévois&#39;: 207, &#39;new&#39;: 35, &#39;envisage&#39;: 178, &#39;nos&#39;: 152, &#39;mouillée&#39;: 322, &#39;le&#39;: 10, &#39;prévoyons&#39;: 208, &#39;hiver&#39;: 44, &#39;moins&#39;: 13, &#39;avez&#39;: 231, &#39;pluies&#39;: 177, &#39;nouveau&#39;: 163, &#39;facile&#39;: 198, &#39;anglais&#39;: 189, &#39;octobre&#39;: 54, &#39;congélation&#39;: 307, &#39;at&#39;: 288, &#39;plus&#39;: 23, &#39;généralement&#39;: 12, &#39;gèle&#39;: 95, &#39;nouvelle&#39;: 147, &#39;verte&#39;: 150, &#39;moindres&#39;: 323, &#39;sur&#39;: 289, &#39;maillot&#39;: 228, &#39;frais&#39;: 297, &#39;à&#39;: 26, &#39;inde&#39;: 30, &#39;pamplemousses&#39;: 159, &#39;relaxant&#39;: 59, &#39;mes&#39;: 191, &#34;d&#39;&#34;: 79, &#34;l&#39;ours&#34;: 266, &#39;rendre&#39;: 181, &#39;mais&#39;: 5, &#39;lapins&#39;: 258, &#39;se&#39;: 167, &#39;préféré&#39;: 17, &#39;fruits&#39;: 96, &#39;la&#39;: 7, &#39;pommes&#39;: 71, &#39;allé&#39;: 223, &#39;décembre&#39;: 52, &#39;gelé&#39;: 246, &#39;aimée&#39;: 242, &#39;éléphants&#39;: 267, &#34;qu&#39;il&#34;: 172, &#39;était&#39;: 122, &#39;du&#39;: 285, &#39;ils&#39;: 99, &#39;paris&#39;: 29, &#39;fraises&#39;: 73, &#34;j&#39;aime&#34;: 135, &#39;serpent&#39;: 221, &#39;ont&#39;: 212, &#39;aller&#39;: 123, &#39;dans&#39;: 314, &#39;pendant&#39;: 37, &#39;neigeux&#39;: 112, &#39;conduisait&#39;: 145, &#39;elle&#39;: 27, &#39;ce&#39;: 115, &#39;favori&#39;: 93, &#39;pleut&#39;: 157, &#39;oranges&#39;: 74, &#39;brillante&#39;: 174, &#39;gel&#39;: 81, &#39;vont&#39;: 229, &#39;durant&#39;: 308, &#39;ne&#39;: 105, &#39;grosses&#39;: 320, &#39;serpents&#39;: 268, &#39;poires&#39;: 75}
 </pre>
 </div>
 </div>
 
 <div class="output_area">
+
 <div class="prompt output_prompt">Out[9]:</div>
+
 
 
 
@@ -12354,8 +12360,8 @@ Sample 3
          [ 1.,  0.,  0., ...,  0.,  0.,  0.],
          [ 1.,  0.,  0., ...,  0.,  0.,  0.],
          [ 1.,  0.,  0., ...,  0.,  0.,  0.]]]),
- &lt;keras.preprocessing.text.Tokenizer at 0x113a866a0&gt;,
- &lt;keras.preprocessing.text.Tokenizer at 0x10ca33470&gt;)</pre>
+ &lt;keras.preprocessing.text.Tokenizer at 0x7fd4cc6e0c88&gt;,
+ &lt;keras.preprocessing.text.Tokenizer at 0x7fd4cc6e0ef0&gt;)</pre>
 </div>
 
 </div>
@@ -12364,8 +12370,7 @@ Sample 3
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12387,7 +12392,7 @@ A basic RNN model is a good baseline for sequence data.  In this model, you'll b
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[21]:</div>
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
@@ -12400,9 +12405,8 @@ A basic RNN model is a good baseline for sequence data.  In this model, you'll b
 
 
 <span class="k">def</span> <span class="nf">model_one</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">x_tk</span><span class="p">,</span> <span class="n">y_tk</span><span class="p">):</span>
-    <span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">x</span><span class="o">.</span><span class="n">shape</span> <span class="o">+</span> <span class="p">(</span><span class="mi">1</span><span class="p">,))</span>
     <span class="n">model</span> <span class="o">=</span> <span class="n">Sequential</span><span class="p">()</span>
-    <span class="n">model</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">GRU</span><span class="p">(</span><span class="mi">512</span><span class="p">,</span> <span class="n">return_sequences</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">input_shape</span><span class="o">=</span><span class="n">x</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">:]))</span>
+    <span class="n">model</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">GRU</span><span class="p">(</span><span class="mi">512</span><span class="p">,</span> <span class="n">return_sequences</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">input_shape</span><span class="o">=</span><span class="n">x</span><span class="o">.</span><span class="n">shape</span><span class="p">))</span>
     <span class="n">model</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">Dense</span><span class="p">(</span><span class="mi">345</span><span class="p">))</span>
     <span class="n">model</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">Activation</span><span class="p">(</span><span class="s1">&#39;softmax&#39;</span><span class="p">))</span>
     <span class="n">model</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="n">loss</span><span class="o">=</span><span class="s1">&#39;categorical_crossentropy&#39;</span><span class="p">,</span> <span class="n">optimizer</span><span class="o">=</span><span class="s1">&#39;adam&#39;</span><span class="p">,</span> <span class="n">metrics</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;accuracy&#39;</span><span class="p">])</span>
@@ -12422,20 +12426,22 @@ A basic RNN model is a good baseline for sequence data.  In this model, you'll b
 
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>_________________________________________________________________
 Layer (type)                 Output Shape              Param #   
 =================================================================
-gru_6 (GRU)                  (None, 512)               789504    
+gru_1 (GRU)                  (None, 512)               811008    
 _________________________________________________________________
-dense_4 (Dense)              (None, 345)               176985    
+dense_1 (Dense)              (None, 345)               176985    
 _________________________________________________________________
-activation_4 (Activation)    (None, 345)               0         
+activation_1 (Activation)    (None, 345)               0         
 =================================================================
-Total params: 966,489.0
-Trainable params: 966,489.0
+Total params: 987,993.0
+Trainable params: 987,993.0
 Non-trainable params: 0.0
 _________________________________________________________________
 </pre>
@@ -12443,12 +12449,14 @@ _________________________________________________________________
 </div>
 
 <div class="output_area">
-<div class="prompt output_prompt">Out[21]:</div>
+
+<div class="prompt output_prompt">Out[9]:</div>
+
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>&lt;keras.models.Sequential at 0x10f92a908&gt;</pre>
+<pre>&lt;keras.models.Sequential at 0x7f8e5ce31860&gt;</pre>
 </div>
 
 </div>
@@ -12457,8 +12465,7 @@ _________________________________________________________________
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12471,7 +12478,7 @@ You've turned the words into ids, but there's a better representation of a word.
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[22]:</div>
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">keras.layers.embeddings</span> <span class="k">import</span> <span class="n">Embedding</span>
@@ -12502,7 +12509,9 @@ You've turned the words into ids, but there's a better representation of a word.
 
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>_________________________________________________________________
@@ -12510,11 +12519,11 @@ Layer (type)                 Output Shape              Param #
 =================================================================
 embedding_1 (Embedding)      (None, 15, 345)           69000     
 _________________________________________________________________
-gru_7 (GRU)                  (None, 512)               1317888   
+gru_2 (GRU)                  (None, 512)               1317888   
 _________________________________________________________________
-dense_5 (Dense)              (None, 345)               176985    
+dense_2 (Dense)              (None, 345)               176985    
 _________________________________________________________________
-activation_5 (Activation)    (None, 345)               0         
+activation_2 (Activation)    (None, 345)               0         
 =================================================================
 Total params: 1,563,873.0
 Trainable params: 1,563,873.0
@@ -12525,12 +12534,14 @@ _________________________________________________________________
 </div>
 
 <div class="output_area">
-<div class="prompt output_prompt">Out[22]:</div>
+
+<div class="prompt output_prompt">Out[10]:</div>
+
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>&lt;keras.models.Sequential at 0x116cb4128&gt;</pre>
+<pre>&lt;keras.models.Sequential at 0x7f8e5c110ef0&gt;</pre>
 </div>
 
 </div>
@@ -12539,8 +12550,7 @@ _________________________________________________________________
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12553,7 +12563,7 @@ Time to look at encoder-decoder models.  This model is made up of an encoder and
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[23]:</div>
+<div class="prompt input_prompt">In&nbsp;[11]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">keras.layers</span> <span class="k">import</span> <span class="n">RepeatVector</span>
@@ -12592,7 +12602,9 @@ Time to look at encoder-decoder models.  This model is made up of an encoder and
 
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>_________________________________________________________________
@@ -12600,15 +12612,15 @@ Layer (type)                 Output Shape              Param #
 =================================================================
 embedding_2 (Embedding)      (None, 15, 351)           70200     
 _________________________________________________________________
-gru_8 (GRU)                  (None, 512)               1327104   
+gru_3 (GRU)                  (None, 512)               1327104   
 _________________________________________________________________
 repeat_vector_1 (RepeatVecto (None, 21, 512)           0         
 _________________________________________________________________
-gru_9 (GRU)                  (None, 21, 512)           1574400   
+gru_4 (GRU)                  (None, 21, 512)           1574400   
 _________________________________________________________________
 time_distributed_1 (TimeDist (None, 21, 345)           176985    
 _________________________________________________________________
-activation_6 (Activation)    (None, 21, 345)           0         
+activation_3 (Activation)    (None, 21, 345)           0         
 =================================================================
 Total params: 3,148,689.0
 Trainable params: 3,148,689.0
@@ -12619,12 +12631,14 @@ _________________________________________________________________
 </div>
 
 <div class="output_area">
-<div class="prompt output_prompt">Out[23]:</div>
+
+<div class="prompt output_prompt">Out[11]:</div>
+
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>&lt;keras.models.Sequential at 0x10bbfef60&gt;</pre>
+<pre>&lt;keras.models.Sequential at 0x7f8e5be9dfd0&gt;</pre>
 </div>
 
 </div>
@@ -12633,8 +12647,7 @@ _________________________________________________________________
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12646,7 +12659,7 @@ One restriction of a RNN is that it can't see the future input, only the past.  
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[24]:</div>
+<div class="prompt input_prompt">In&nbsp;[12]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">keras.layers</span> <span class="k">import</span> <span class="n">Bidirectional</span>
@@ -12674,7 +12687,9 @@ One restriction of a RNN is that it can't see the future input, only the past.  
 
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>_________________________________________________________________
@@ -12682,7 +12697,7 @@ Layer (type)                 Output Shape              Param #
 =================================================================
 bidirectional_1 (Bidirection (None, 1024)              1622016   
 _________________________________________________________________
-activation_7 (Activation)    (None, 1024)              0         
+activation_4 (Activation)    (None, 1024)              0         
 =================================================================
 Total params: 1,622,016.0
 Trainable params: 1,622,016.0
@@ -12693,12 +12708,14 @@ _________________________________________________________________
 </div>
 
 <div class="output_area">
-<div class="prompt output_prompt">Out[24]:</div>
+
+<div class="prompt output_prompt">Out[12]:</div>
+
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>&lt;keras.models.Sequential at 0x115802278&gt;</pre>
+<pre>&lt;keras.models.Sequential at 0x7f8e5c110be0&gt;</pre>
 </div>
 
 </div>
@@ -12707,8 +12724,7 @@ _________________________________________________________________
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12719,7 +12735,7 @@ _________________________________________________________________
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[27]:</div>
+<div class="prompt input_prompt">In&nbsp;[14]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">model_final</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">x_tk</span><span class="p">,</span> <span class="n">y_tk</span><span class="p">):</span>
@@ -12738,7 +12754,7 @@ _________________________________________________________________
     
     <span class="n">model</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="n">loss</span><span class="o">=</span><span class="s1">&#39;categorical_crossentropy&#39;</span><span class="p">,</span> <span class="n">optimizer</span><span class="o">=</span><span class="s1">&#39;adam&#39;</span><span class="p">)</span>
     <span class="n">model</span><span class="o">.</span><span class="n">summary</span><span class="p">()</span>
-    <span class="n">model</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">batch_size</span><span class="o">=</span><span class="mi">32</span><span class="p">,</span> <span class="n">epochs</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">verbose</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">callbacks</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">validation_split</span><span class="o">=</span><span class="mf">0.0</span><span class="p">,</span> <span class="n">validation_data</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">shuffle</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">class_weight</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">sample_weight</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">initial_epoch</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+    <span class="n">model</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">batch_size</span><span class="o">=</span><span class="mi">128</span><span class="p">,</span> <span class="n">epochs</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">verbose</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">callbacks</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">validation_split</span><span class="o">=</span><span class="mf">0.0</span><span class="p">,</span> <span class="n">validation_data</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">shuffle</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">class_weight</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">sample_weight</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">initial_epoch</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
     
     <span class="k">return</span> <span class="n">model</span>
     
@@ -12754,7 +12770,9 @@ _________________________________________________________________
 
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>_________________________________________________________________
@@ -12766,113 +12784,58 @@ bidirectional_3 (Bidirection (None, 1024)              2635776
 _________________________________________________________________
 repeat_vector_3 (RepeatVecto (None, 21, 1024)          0         
 _________________________________________________________________
-gru_14 (GRU)                 (None, 21, 512)           2360832   
+gru_9 (GRU)                  (None, 21, 512)           2360832   
 _________________________________________________________________
 time_distributed_3 (TimeDist (None, 21, 345)           176985    
 _________________________________________________________________
-activation_9 (Activation)    (None, 21, 345)           0         
+activation_6 (Activation)    (None, 21, 345)           0         
 =================================================================
 Total params: 5,242,593.0
 Trainable params: 5,242,593.0
 Non-trainable params: 0.0
 _________________________________________________________________
 Epoch 1/10
-  2048/137861 [..............................] - ETA: 2091s - loss: 3.1825</pre>
+137861/137861 [==============================] - 509s - loss: 1.2011   
+Epoch 2/10
+137861/137861 [==============================] - 474s - loss: 0.3629   
+Epoch 3/10
+137861/137861 [==============================] - 459s - loss: 0.2028   
+Epoch 4/10
+137861/137861 [==============================] - 510s - loss: 0.1099   
+Epoch 5/10
+137861/137861 [==============================] - 505s - loss: 0.0959   
+Epoch 6/10
+137861/137861 [==============================] - 504s - loss: 0.0897   
+Epoch 7/10
+137861/137861 [==============================] - 456s - loss: 0.0712   
+Epoch 8/10
+137861/137861 [==============================] - 456s - loss: 0.0585   
+Epoch 9/10
+137861/137861 [==============================] - 502s - loss: 0.0563   
+Epoch 10/10
+137861/137861 [==============================] - 424s - loss: 0.0645   
+</pre>
 </div>
 </div>
 
 <div class="output_area">
-<div class="prompt"></div>
 
-<div class="output_subarea output_text output_error">
-<pre>
-<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
-<span class="ansi-red-fg">KeyboardInterrupt</span>                         Traceback (most recent call last)
-<span class="ansi-green-fg">&lt;ipython-input-27-9079174f13f6&gt;</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span><span class="ansi-blue-fg">()</span>
-<span class="ansi-green-intense-fg ansi-bold">     19</span>     <span class="ansi-green-fg">return</span> model
-<span class="ansi-green-intense-fg ansi-bold">     20</span> 
-<span class="ansi-green-fg">---&gt; 21</span><span class="ansi-red-fg"> </span>model_final<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">*</span>preprocess<span class="ansi-blue-fg">(</span>english_sentences<span class="ansi-blue-fg">,</span> french_sentences<span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">)</span>
+<div class="prompt output_prompt">Out[14]:</div>
 
-<span class="ansi-green-fg">&lt;ipython-input-27-9079174f13f6&gt;</span> in <span class="ansi-cyan-fg">model_final</span><span class="ansi-blue-fg">(x, y, x_tk, y_tk)</span>
-<span class="ansi-green-intense-fg ansi-bold">     15</span>     model<span class="ansi-blue-fg">.</span>compile<span class="ansi-blue-fg">(</span>loss<span class="ansi-blue-fg">=</span><span class="ansi-blue-fg">&#39;categorical_crossentropy&#39;</span><span class="ansi-blue-fg">,</span> optimizer<span class="ansi-blue-fg">=</span><span class="ansi-blue-fg">&#39;adam&#39;</span><span class="ansi-blue-fg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">     16</span>     model<span class="ansi-blue-fg">.</span>summary<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">)</span>
-<span class="ansi-green-fg">---&gt; 17</span><span class="ansi-red-fg">     </span>model<span class="ansi-blue-fg">.</span>fit<span class="ansi-blue-fg">(</span>x<span class="ansi-blue-fg">,</span> y<span class="ansi-blue-fg">,</span> batch_size<span class="ansi-blue-fg">=</span><span class="ansi-cyan-fg">32</span><span class="ansi-blue-fg">,</span> epochs<span class="ansi-blue-fg">=</span><span class="ansi-cyan-fg">10</span><span class="ansi-blue-fg">,</span> verbose<span class="ansi-blue-fg">=</span><span class="ansi-cyan-fg">1</span><span class="ansi-blue-fg">,</span> callbacks<span class="ansi-blue-fg">=</span><span class="ansi-green-fg">None</span><span class="ansi-blue-fg">,</span> validation_split<span class="ansi-blue-fg">=</span><span class="ansi-cyan-fg">0.0</span><span class="ansi-blue-fg">,</span> validation_data<span class="ansi-blue-fg">=</span><span class="ansi-green-fg">None</span><span class="ansi-blue-fg">,</span> shuffle<span class="ansi-blue-fg">=</span><span class="ansi-green-fg">True</span><span class="ansi-blue-fg">,</span> class_weight<span class="ansi-blue-fg">=</span><span class="ansi-green-fg">None</span><span class="ansi-blue-fg">,</span> sample_weight<span class="ansi-blue-fg">=</span><span class="ansi-green-fg">None</span><span class="ansi-blue-fg">,</span> initial_epoch<span class="ansi-blue-fg">=</span><span class="ansi-cyan-fg">0</span><span class="ansi-blue-fg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">     18</span> 
-<span class="ansi-green-intense-fg ansi-bold">     19</span>     <span class="ansi-green-fg">return</span> model
 
-<span class="ansi-green-fg">/Users/rhoesada/anaconda/envs/aind-dl/lib/python3.5/site-packages/keras/models.py</span> in <span class="ansi-cyan-fg">fit</span><span class="ansi-blue-fg">(self, x, y, batch_size, epochs, verbose, callbacks, validation_split, validation_data, shuffle, class_weight, sample_weight, initial_epoch, **kwargs)</span>
-<span class="ansi-green-intense-fg ansi-bold">    843</span>                               class_weight<span class="ansi-blue-fg">=</span>class_weight<span class="ansi-blue-fg">,</span>
-<span class="ansi-green-intense-fg ansi-bold">    844</span>                               sample_weight<span class="ansi-blue-fg">=</span>sample_weight<span class="ansi-blue-fg">,</span>
-<span class="ansi-green-fg">--&gt; 845</span><span class="ansi-red-fg">                               initial_epoch=initial_epoch)
-</span><span class="ansi-green-intense-fg ansi-bold">    846</span> 
-<span class="ansi-green-intense-fg ansi-bold">    847</span>     def evaluate(self, x, y, batch_size=32, verbose=1,
 
-<span class="ansi-green-fg">/Users/rhoesada/anaconda/envs/aind-dl/lib/python3.5/site-packages/keras/engine/training.py</span> in <span class="ansi-cyan-fg">fit</span><span class="ansi-blue-fg">(self, x, y, batch_size, epochs, verbose, callbacks, validation_split, validation_data, shuffle, class_weight, sample_weight, initial_epoch, **kwargs)</span>
-<span class="ansi-green-intense-fg ansi-bold">   1483</span>                               val_f<span class="ansi-blue-fg">=</span>val_f<span class="ansi-blue-fg">,</span> val_ins<span class="ansi-blue-fg">=</span>val_ins<span class="ansi-blue-fg">,</span> shuffle<span class="ansi-blue-fg">=</span>shuffle<span class="ansi-blue-fg">,</span>
-<span class="ansi-green-intense-fg ansi-bold">   1484</span>                               callback_metrics<span class="ansi-blue-fg">=</span>callback_metrics<span class="ansi-blue-fg">,</span>
-<span class="ansi-green-fg">-&gt; 1485</span><span class="ansi-red-fg">                               initial_epoch=initial_epoch)
-</span><span class="ansi-green-intense-fg ansi-bold">   1486</span> 
-<span class="ansi-green-intense-fg ansi-bold">   1487</span>     <span class="ansi-green-fg">def</span> evaluate<span class="ansi-blue-fg">(</span>self<span class="ansi-blue-fg">,</span> x<span class="ansi-blue-fg">,</span> y<span class="ansi-blue-fg">,</span> batch_size<span class="ansi-blue-fg">=</span><span class="ansi-cyan-fg">32</span><span class="ansi-blue-fg">,</span> verbose<span class="ansi-blue-fg">=</span><span class="ansi-cyan-fg">1</span><span class="ansi-blue-fg">,</span> sample_weight<span class="ansi-blue-fg">=</span><span class="ansi-green-fg">None</span><span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">:</span>
 
-<span class="ansi-green-fg">/Users/rhoesada/anaconda/envs/aind-dl/lib/python3.5/site-packages/keras/engine/training.py</span> in <span class="ansi-cyan-fg">_fit_loop</span><span class="ansi-blue-fg">(self, f, ins, out_labels, batch_size, epochs, verbose, callbacks, val_f, val_ins, shuffle, callback_metrics, initial_epoch)</span>
-<span class="ansi-green-intense-fg ansi-bold">   1138</span>                 batch_logs<span class="ansi-blue-fg">[</span><span class="ansi-blue-fg">&#39;size&#39;</span><span class="ansi-blue-fg">]</span> <span class="ansi-blue-fg">=</span> len<span class="ansi-blue-fg">(</span>batch_ids<span class="ansi-blue-fg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">   1139</span>                 callbacks<span class="ansi-blue-fg">.</span>on_batch_begin<span class="ansi-blue-fg">(</span>batch_index<span class="ansi-blue-fg">,</span> batch_logs<span class="ansi-blue-fg">)</span>
-<span class="ansi-green-fg">-&gt; 1140</span><span class="ansi-red-fg">                 </span>outs <span class="ansi-blue-fg">=</span> f<span class="ansi-blue-fg">(</span>ins_batch<span class="ansi-blue-fg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">   1141</span>                 <span class="ansi-green-fg">if</span> <span class="ansi-green-fg">not</span> isinstance<span class="ansi-blue-fg">(</span>outs<span class="ansi-blue-fg">,</span> list<span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">:</span>
-<span class="ansi-green-intense-fg ansi-bold">   1142</span>                     outs <span class="ansi-blue-fg">=</span> <span class="ansi-blue-fg">[</span>outs<span class="ansi-blue-fg">]</span>
-
-<span class="ansi-green-fg">/Users/rhoesada/anaconda/envs/aind-dl/lib/python3.5/site-packages/keras/backend/tensorflow_backend.py</span> in <span class="ansi-cyan-fg">__call__</span><span class="ansi-blue-fg">(self, inputs)</span>
-<span class="ansi-green-intense-fg ansi-bold">   2071</span>         session <span class="ansi-blue-fg">=</span> get_session<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">   2072</span>         updated = session.run(self.outputs + [self.updates_op],
-<span class="ansi-green-fg">-&gt; 2073</span><span class="ansi-red-fg">                               feed_dict=feed_dict)
-</span><span class="ansi-green-intense-fg ansi-bold">   2074</span>         <span class="ansi-green-fg">return</span> updated<span class="ansi-blue-fg">[</span><span class="ansi-blue-fg">:</span>len<span class="ansi-blue-fg">(</span>self<span class="ansi-blue-fg">.</span>outputs<span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">]</span>
-<span class="ansi-green-intense-fg ansi-bold">   2075</span> 
-
-<span class="ansi-green-fg">/Users/rhoesada/anaconda/envs/aind-dl/lib/python3.5/site-packages/tensorflow/python/client/session.py</span> in <span class="ansi-cyan-fg">run</span><span class="ansi-blue-fg">(self, fetches, feed_dict, options, run_metadata)</span>
-<span class="ansi-green-intense-fg ansi-bold">    765</span>     <span class="ansi-green-fg">try</span><span class="ansi-blue-fg">:</span>
-<span class="ansi-green-intense-fg ansi-bold">    766</span>       result = self._run(None, fetches, feed_dict, options_ptr,
-<span class="ansi-green-fg">--&gt; 767</span><span class="ansi-red-fg">                          run_metadata_ptr)
-</span><span class="ansi-green-intense-fg ansi-bold">    768</span>       <span class="ansi-green-fg">if</span> run_metadata<span class="ansi-blue-fg">:</span>
-<span class="ansi-green-intense-fg ansi-bold">    769</span>         proto_data <span class="ansi-blue-fg">=</span> tf_session<span class="ansi-blue-fg">.</span>TF_GetBuffer<span class="ansi-blue-fg">(</span>run_metadata_ptr<span class="ansi-blue-fg">)</span>
-
-<span class="ansi-green-fg">/Users/rhoesada/anaconda/envs/aind-dl/lib/python3.5/site-packages/tensorflow/python/client/session.py</span> in <span class="ansi-cyan-fg">_run</span><span class="ansi-blue-fg">(self, handle, fetches, feed_dict, options, run_metadata)</span>
-<span class="ansi-green-intense-fg ansi-bold">    963</span>     <span class="ansi-green-fg">if</span> final_fetches <span class="ansi-green-fg">or</span> final_targets<span class="ansi-blue-fg">:</span>
-<span class="ansi-green-intense-fg ansi-bold">    964</span>       results = self._do_run(handle, final_targets, final_fetches,
-<span class="ansi-green-fg">--&gt; 965</span><span class="ansi-red-fg">                              feed_dict_string, options, run_metadata)
-</span><span class="ansi-green-intense-fg ansi-bold">    966</span>     <span class="ansi-green-fg">else</span><span class="ansi-blue-fg">:</span>
-<span class="ansi-green-intense-fg ansi-bold">    967</span>       results <span class="ansi-blue-fg">=</span> <span class="ansi-blue-fg">[</span><span class="ansi-blue-fg">]</span>
-
-<span class="ansi-green-fg">/Users/rhoesada/anaconda/envs/aind-dl/lib/python3.5/site-packages/tensorflow/python/client/session.py</span> in <span class="ansi-cyan-fg">_do_run</span><span class="ansi-blue-fg">(self, handle, target_list, fetch_list, feed_dict, options, run_metadata)</span>
-<span class="ansi-green-intense-fg ansi-bold">   1013</span>     <span class="ansi-green-fg">if</span> handle <span class="ansi-green-fg">is</span> <span class="ansi-green-fg">None</span><span class="ansi-blue-fg">:</span>
-<span class="ansi-green-intense-fg ansi-bold">   1014</span>       return self._do_call(_run_fn, self._session, feed_dict, fetch_list,
-<span class="ansi-green-fg">-&gt; 1015</span><span class="ansi-red-fg">                            target_list, options, run_metadata)
-</span><span class="ansi-green-intense-fg ansi-bold">   1016</span>     <span class="ansi-green-fg">else</span><span class="ansi-blue-fg">:</span>
-<span class="ansi-green-intense-fg ansi-bold">   1017</span>       return self._do_call(_prun_fn, self._session, handle, feed_dict,
-
-<span class="ansi-green-fg">/Users/rhoesada/anaconda/envs/aind-dl/lib/python3.5/site-packages/tensorflow/python/client/session.py</span> in <span class="ansi-cyan-fg">_do_call</span><span class="ansi-blue-fg">(self, fn, *args)</span>
-<span class="ansi-green-intense-fg ansi-bold">   1020</span>   <span class="ansi-green-fg">def</span> _do_call<span class="ansi-blue-fg">(</span>self<span class="ansi-blue-fg">,</span> fn<span class="ansi-blue-fg">,</span> <span class="ansi-blue-fg">*</span>args<span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">:</span>
-<span class="ansi-green-intense-fg ansi-bold">   1021</span>     <span class="ansi-green-fg">try</span><span class="ansi-blue-fg">:</span>
-<span class="ansi-green-fg">-&gt; 1022</span><span class="ansi-red-fg">       </span><span class="ansi-green-fg">return</span> fn<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">*</span>args<span class="ansi-blue-fg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">   1023</span>     <span class="ansi-green-fg">except</span> errors<span class="ansi-blue-fg">.</span>OpError <span class="ansi-green-fg">as</span> e<span class="ansi-blue-fg">:</span>
-<span class="ansi-green-intense-fg ansi-bold">   1024</span>       message <span class="ansi-blue-fg">=</span> compat<span class="ansi-blue-fg">.</span>as_text<span class="ansi-blue-fg">(</span>e<span class="ansi-blue-fg">.</span>message<span class="ansi-blue-fg">)</span>
-
-<span class="ansi-green-fg">/Users/rhoesada/anaconda/envs/aind-dl/lib/python3.5/site-packages/tensorflow/python/client/session.py</span> in <span class="ansi-cyan-fg">_run_fn</span><span class="ansi-blue-fg">(session, feed_dict, fetch_list, target_list, options, run_metadata)</span>
-<span class="ansi-green-intense-fg ansi-bold">   1002</span>         return tf_session.TF_Run(session, options,
-<span class="ansi-green-intense-fg ansi-bold">   1003</span>                                  feed_dict<span class="ansi-blue-fg">,</span> fetch_list<span class="ansi-blue-fg">,</span> target_list<span class="ansi-blue-fg">,</span>
-<span class="ansi-green-fg">-&gt; 1004</span><span class="ansi-red-fg">                                  status, run_metadata)
-</span><span class="ansi-green-intense-fg ansi-bold">   1005</span> 
-<span class="ansi-green-intense-fg ansi-bold">   1006</span>     <span class="ansi-green-fg">def</span> _prun_fn<span class="ansi-blue-fg">(</span>session<span class="ansi-blue-fg">,</span> handle<span class="ansi-blue-fg">,</span> feed_dict<span class="ansi-blue-fg">,</span> fetch_list<span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">:</span>
-
-<span class="ansi-red-fg">KeyboardInterrupt</span>: </pre>
+<div class="output_text output_subarea output_execute_result">
+<pre>&lt;keras.models.Sequential at 0x7f8e8a610b38&gt;</pre>
 </div>
+
 </div>
 
 </div>
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12882,7 +12845,7 @@ Epoch 1/10
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[15]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
@@ -12921,9 +12884,70 @@ Epoch 1/10
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+embedding_5 (Embedding)      (None, 15, 345)           69000     
+_________________________________________________________________
+bidirectional_4 (Bidirection (None, 1024)              2635776   
+_________________________________________________________________
+repeat_vector_4 (RepeatVecto (None, 21, 1024)          0         
+_________________________________________________________________
+gru_11 (GRU)                 (None, 21, 512)           2360832   
+_________________________________________________________________
+time_distributed_4 (TimeDist (None, 21, 345)           176985    
+_________________________________________________________________
+activation_7 (Activation)    (None, 21, 345)           0         
+=================================================================
+Total params: 5,242,593.0
+Trainable params: 5,242,593.0
+Non-trainable params: 0.0
+_________________________________________________________________
+Epoch 1/10
+137861/137861 [==============================] - 433s - loss: 1.1168   
+Epoch 2/10
+137861/137861 [==============================] - 462s - loss: 0.3464   
+Epoch 3/10
+137861/137861 [==============================] - 495s - loss: 0.1664   
+Epoch 4/10
+137861/137861 [==============================] - 434s - loss: 0.1103   
+Epoch 5/10
+137861/137861 [==============================] - 433s - loss: 0.0880   
+Epoch 6/10
+137861/137861 [==============================] - 432s - loss: 0.0943   
+Epoch 7/10
+137861/137861 [==============================] - 438s - loss: 0.0689   
+Epoch 8/10
+137861/137861 [==============================] - 505s - loss: 0.0500   
+Epoch 9/10
+137861/137861 [==============================] - 436s - loss: 0.0596   
+Epoch 10/10
+137861/137861 [==============================] - 462s - loss: 0.0539   
+Sample 1:
+&lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; il a vu un vieux camion jaune
+Il a vu un vieux camion jaune.
+Sample 2:
+&lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; new new est parfois calme calme l&#39; automne et il est neigeux en avril
+&lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; &lt;PAD&gt; new jersey est parfois calme pendant l&#39; automne et il est neigeux en avril
+</pre>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
